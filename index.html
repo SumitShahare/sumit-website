@@ -64,7 +64,12 @@
         Manager & Business Analyst at <strong>ICICI Bank</strong> · Driving digital banking excellence through Agile, API integration, and data-driven insights.
       </p>
       <div class="hero-cta reveal-up delay-4">
-        <a href="#experience" class="btn-primary">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+        <button class="btn-primary" id="view-resume-btn">
+          <i class="fa-solid fa-file-lines"></i> View Resume
+        </button>
+        <a href="assets/Sumit_Resume.pdf" download="Sumit_Shahare_Resume.pdf" class="btn-ghost">
+          <i class="fa-solid fa-arrow-down"></i> Download
+        </a>
         <a href="#contact" class="btn-ghost">Get in Touch</a>
       </div>
       <div class="hero-stats reveal-up delay-5">
@@ -563,6 +568,45 @@
       </div>
     </div>
   </footer>
+
+  <!-- ===== RESUME MODAL ===== -->
+  <div class="resume-modal" id="resume-modal" role="dialog" aria-modal="true" aria-label="Resume Viewer">
+    <div class="resume-modal-backdrop" id="modal-backdrop"></div>
+    <div class="resume-modal-box">
+      <div class="resume-modal-header">
+        <div class="resume-modal-title">
+          <i class="fa-solid fa-file-lines"></i>
+          <span>Sumit Shahare — Resume</span>
+        </div>
+        <div class="resume-modal-actions">
+          <a href="assets/Sumit_Resume.pdf" download="Sumit_Shahare_Resume.pdf" class="modal-btn-download">
+            <i class="fa-solid fa-arrow-down"></i> Download
+          </a>
+          <button class="modal-btn-close" id="modal-close" aria-label="Close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+      <div class="resume-modal-body">
+        <iframe
+          src="assets/Sumit_Resume.pdf#toolbar=0&navpanes=0&scrollbar=1"
+          title="Sumit Shahare Resume"
+          class="resume-iframe"
+          id="resume-iframe"
+        ></iframe>
+        <div class="resume-fallback" id="resume-fallback">
+          <i class="fa-solid fa-file-pdf"></i>
+          <p>PDF not loading inline?</p>
+          <a href="assets/Sumit_Resume.pdf" target="_blank" rel="noopener" class="btn-primary">
+            Open in New Tab <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+          <a href="assets/Sumit_Resume.pdf" download="Sumit_Shahare_Resume.pdf" class="btn-ghost">
+            <i class="fa-solid fa-arrow-down"></i> Download PDF
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="js/main.js"></script>
 </body>
